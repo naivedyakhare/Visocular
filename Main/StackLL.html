@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Stack using Linked List</title>
+
+    <link rel="stylesheet" href="visualizationPageStyle.css" />
+
+    <link rel="stylesheet" href="ThirdParty/jquery-ui-1.8.11.custom.css" />
+    <script
+      type="text/javascript"
+      src="AnimationLibrary/CustomEvents.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="AnimationLibrary/UndoFunctions.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="AnimationLibrary/AnimatedObject.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="AnimationLibrary/AnimatedLabel.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="AnimationLibrary/AnimatedRectangle.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="AnimationLibrary/AnimatedLinkedList.js"
+    ></script>
+    <script type="text/javascript" src="AnimationLibrary/Line.js"></script>
+    <script
+      type="text/javascript"
+      src="AnimationLibrary/ObjectManager.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="AnimationLibrary/AnimationMain.js"
+    ></script>
+    <script type="text/javascript" src="AnimationLibrary/TESTTTT.js"></script>
+
+    <script type="text/javascript" src="AlgorithmLibrary/Algorithm.js"></script>
+    <script type="text/javascript" src="AlgorithmLibrary/StackLL.js"></script>
+    <style>
+      body {
+        background-color: #f3f3f3;
+      }
+      .nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 9rem;
+        width: 100%;
+        padding: 0 6rem;
+        z-index: 100;
+      }
+
+      /* nav and stickly class at the same time */
+      .nav.sticky {
+        position: fixed;
+        background-color: rgba(255, 255, 255, 0.95);
+      }
+
+      .nav__logo {
+        height: 4.5rem;
+        transition: all 0.3s;
+        border-radius: 10px;
+        transform: scale(1.3);
+        cursor: pointer;
+      }
+    </style>
+  </head>
+
+  <body onload="init();" class="VisualizationMainPage">
+    <header class="header">
+      <nav class="nav">
+        <a href="../index.html">
+          <img
+            src="../img/Logo/visocular-logos.jpeg"
+            alt="Visocular logo"
+            class="nav__logo"
+            id="logo"
+          />
+        </a>
+      </nav>
+    </header>
+    <div id="container">
+      <div id="header">
+        <h1>Stack (Linked List Implementaion)</h1>
+      </div>
+
+      <div ="id" ="mainContent">
+        <div id="algoControlSection">
+          <table id="AlgorithmSpecificControls"></table>
+        </div>
+
+        <canvas id="canvas" width="1000" height="500"></canvas>
+
+        <div id="generalAnimationControlSection">
+          <table id="GeneralAnimationControls"></table>
+        </div>
+      </div>
+
+      <div id="footer">
+        <p><a href="Algorithms.html">Algorithm Visualizations</a></p>
+      </div>
+    </div>
+
+    <script>
+      document.getElementById("generalAnimationControlSection").innerHTML = "";
+    </script>
+  </body>
+</html>
